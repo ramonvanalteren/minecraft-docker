@@ -1,9 +1,7 @@
 FROM debian:7.8
 MAINTAINER Ramon van Alteren <ramon@vanalteren.nl>
 
-RUN apt-get update 
-RUN apt-get install -y curl
-RUN apt-get install -y openjdk-7-jre-headless
+RUN apt-get update && apt-get install -y curl openjdk-7-jre-headless
 
 ENV S_VERSION spigot18
 ENV PORT 25565
