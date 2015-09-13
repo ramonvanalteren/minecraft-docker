@@ -19,5 +19,6 @@ EXPOSE ${PORT}
 COPY start_spigot.sh /opt/spigot/
 COPY server.properties /opt/spigot/
 COPY ops.json /opt/spigot/
+COPY whitelist.json /opt/spigot/
 RUN chmod u+x start_spigot.sh
 CMD /opt/spigot/start_spigot.sh
